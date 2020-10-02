@@ -1,11 +1,5 @@
-grades = [1,2,3,4]
-
-sum = 0
-
-grades.each do |grade|
-  sum += grade
+def find_outlier(integers)
+  integers.partition(&:odd?).find(&:one?)[0]
 end
 
-mean = sum.to_f / grades.length
-
-puts "Media: #{mean}"
+puts find_outlier([2,4,6,8,7])
