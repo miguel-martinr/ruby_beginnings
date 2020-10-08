@@ -1,4 +1,5 @@
-require("./include/colored_triangle.rb")
+# frozen_string_literal: true
 
+require('./include/colored_triangle.rb')
 
-puts triangle("RGB")
+puts triangle('RGB')
